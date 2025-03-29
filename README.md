@@ -41,7 +41,7 @@ flask-finance-control/
 
 2. **Execute o servidor Flask**:
    ```bash
-   python app.py
+   python __init__.py
    ```
 
 3. **Acesse no navegador**:
