@@ -1,0 +1,81 @@
+*{
+    /* overflow-x: hidden; */
+    margin: 0;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+    align-items: center;
+    justify-content: center;
+
+}
+.cardganhos{
+    width: 14em;
+    height: 12em;
+    background-color: #45b08c;
+    margin-right: 2em;
+    border-radius: 10px;
+    transition: transform .25s 
+    ease-out;
+}
+.cardganhos:hover{
+    transform: scale(0.9) rotate(0deg);
+    cursor: pointer;
+}
+#imgganhos{
+    width: 5em;
+    height: 5em;
+    margin-left: 4.5em;
+    margin-top: 2em;
+    margin-bottom: 2.8em;
+}
+.carddespesas{
+    width: 14em;
+    height: 12em;
+    background-color: #45b08c;
+    margin-right: 2em;
+    border-radius: 10px;
+    transition: transform .25s 
+    ease-out;
+}
+.carddespesas:hover{
+    transform: scale(0.9) rotate(0deg);
+    cursor: pointer;
+}
+#imgdespesas{
+    width: 5em;
+    height: 5em;
+    margin-left: 4.5em;
+    margin-top: 2em;
+    margin-bottom: 2.8em;
+}
+.cardmoedas{
+    width: 14em;
+    height: 12em;
+    background-color: #45b08c;
+    border-radius: 10px;
+    transition: transform .25s 
+    ease-out;
+}
+.cardmoedas:hover{
+    transform: scale(0.9) rotate(0deg);
+    cursor: pointer;
+}
+#imgmoedas{
+    width: 5em;
+    height: 5em;
+    margin-left: 4.5em;
+    margin-top: 2em;
+    margin-bottom: 2.8em;
+}
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+

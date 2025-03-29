@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do site</title>
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/ganhos.css">
+    <link rel="stylesheet" href="../static/css/despesas.css">
+</head>
+<body>
+    <header>
+        <div class="space"></div>
+        <a href="{{ url_for('home.home') }}" type="block" style="text-decoration: none;">
+        <div class="logo">
+            <img id="imglogo" src="../static/images/logo.png" alt="">
+        </div>
+        </a>
+        <div class="perfil">
+            <img src="../static/images/perfil.png" alt="" class="user">
+            <img src="../static/images/adicionar.png" alt="" class="add">
+        </div>
+    </header>
+        <div class="valor-conteiner">
+            <div class="valor">
+                <div class="divvalortotal"><h2>{{'R${:.2f}'.format(saldo) }}</h2></div>
+                <div class="divolho"><img id="imgolho" src="../static/images/olho.png" alt=""></div>
+            </div>
+        </div>
+        {% block conteudo %}{% endblock %}
+        
+</body>
+</html>

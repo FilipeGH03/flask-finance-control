@@ -1,0 +1,296 @@
+.all {
+    display: flex;
+}
+
+
+
+.left{
+    background-color: var(--base-green);
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    /* background-color: white; */
+    width: 10em;
+    /* height: 5em; */
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 6em;
+}
+
+.logoright{
+    display: none;
+    /* background-color: var(--base-green); */
+    /* color-scheme: var(--base-green); */
+}
+
+/* .logoright img{
+    width: 5em;
+} */
+
+.white_base_button{
+    width: 10em;
+    height: 2em;
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.white_base_button:hover{
+    color: var(--base-green);
+    background-color: white;
+}
+
+.green_base_button{
+    width: 10em;
+    height: 2em;
+    color: white;
+    background-color: var(--base-green);
+    border-radius: 50px;
+    font-size: 1.5em;
+    transition: 0.3s;
+    border: 0;
+}
+
+.green_base_button:hover{
+    background-color: transparent;
+    border: 2px var(--base-green) solid;
+    color: var(--base-green);
+}
+
+.left h1{
+    color: var(--base-green);
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.left h1.fade-out {
+    opacity: 0;
+}
+
+.left h1.fade-in {
+    opacity: 1;
+}
+
+.title {
+    color: var(--base-green);
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.title.fade-out {
+    opacity: 0;
+}
+
+.title.fade-in {
+    opacity: 1;
+}
+.right{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-top: 6.5vh; */
+    /* animation-name: right_retract; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: initial; */
+}
+#lfi{
+    display: none;
+    transition: ease-in-out;
+}
+
+#lfi .base_input{
+    background-color: white;
+}
+.inputs{
+    height: 9.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.inputs .base_input{
+    width: 16em;
+    height: var(--input-height);
+    padding: var(--input-padding);
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    background-color: var(--base-gray);
+    border: none;
+    font-size: var(--input-font-size);
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+
+}
+
+.base_input:focus { 
+    border-color: #4CAF50 !important; /* Cor da borda quando o input é focado */ 
+    outline: none !important; /* Remove a borda de foco padrão do navegador */ 
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5) !important; /* Sombra sutil */ 
+}
+
+.inputs .base_input::placeholder {
+    color: #7d7d7d;
+}
+
+.inputs .base_input::placeholder{
+    font-size: large;
+    padding: 1em;
+    top: 1em;
+}
+
+.box-cad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left_expand{
+    width: 60%;
+    animation-name: left_expand; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes left_expand {
+    from{
+        width: 40%;
+    }
+    to{
+        width: 60%;
+    }
+
+}
+
+.left_retract {
+    width: 40%;
+    animation-name: left_retract; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes left_retract {
+    from {
+        width: 60%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.right_retract{
+    width: 40%;
+    animation-name: right_retract; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes right_retract {
+    from{
+        width: 60%;
+    }
+    to{
+        width: 40%;
+    }
+
+}
+
+.right_expand {
+    width: 60%;
+    animation-name: right_expand; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes right_expand {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+.show {
+    display: flex !important; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+.disappear {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0; 
+    }
+}
+
+.snackbar {
+    visibility: hidden; /* Hidden by default. Will be shown on click */
+    min-width: 500px; /* Minimum width of the snackbar */
+    margin-left: -255px; /* Center the snackbar */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    justify-content: center;
+    border-radius: 60px; 
+    padding: 8px; /* Padding */
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+    font-size: 17px; 
+    transition: visibility 0s, opacity 0.5s linear; /* Transition for visibility */
+    opacity: 0; /* Hidden by default */
+}
+
+.snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    opacity: 1; /* Fade in the snackbar */
+}
