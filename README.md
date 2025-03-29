@@ -4,8 +4,9 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)
 
 ## 📌 Sobre o Projeto
-O **Flask Finance Control** é um sistema básico de controle financeiro desenvolvido em Flask com fins acadêmicos. Ele permite o gerenciamento de receitas e despesas de forma simples e intuitiva. Sistema não finalizado.
+O **Flask Finance Control** é um sistema básico de controle financeiro desenvolvido em Flask com fins acadêmicos. Ele permite o gerenciamento de receitas e despesas de forma simples e intuitiva. 
 
+**🚧 Work in Progress!**
 ## 🚀 Tecnologias Utilizadas
 - **Python 3.8+**
 - **Flask** (Framework Web)
@@ -44,10 +45,9 @@ flask-finance-control/
    ```
 
 3. **Acesse no navegador**:
-   ```
-http://127.0.0.1:5000
-```
+   ```bash
+   http://127.0.0.1:5000```
+
 
 ## 📝 Licença
-Este projeto foi desenvolvido com fins acadêmicos e é de uso livre. 😊
-
+Este projeto foi desenvolvido com fins acadêmicos e é de uso livre. 
