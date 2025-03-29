@@ -24,6 +24,7 @@ O **Flask Finance Control** é um sistema básico de controle financeiro desenvo
 ```
 flask-finance-control/
 │-- __init__.py       # Arquivo principal do Flask
+│-- routes/         # Arquivos de Rotas
 │-- templates/        # Arquivos HTML
 │-- static/
 │   │-- css/         # Arquivos CSS
